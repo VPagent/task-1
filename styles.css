@@ -1,0 +1,139 @@
+.flagWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
+
+.flag {
+  width: 300px;
+  height: 150px;
+
+  margin-top: 20px;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.ukraineTopPart {
+  display: block;
+  width: 100%;
+  height: 50%;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  background-color: blue;
+}
+
+.ukraineBottomPart {
+  display: block;
+  width: 100%;
+  height: 50%;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  background-color: yellow;
+}
+
+.japan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.japanCircle {
+  display: block;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+  background-color: red;
+}
+
+.iceland {
+  background-color: blue;
+  position: relative;
+}
+
+.horizontalPart {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  height: 50px;
+  width: 100%;
+
+  background-color: white;
+}
+.horizontalRedLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: block;
+  height: 30px;
+  width: 100%;
+  z-index: 1;
+
+  background-color: red;
+}
+
+.verticalPart {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  display: block;
+  height: 100%;
+  width: 50px;
+
+  background-color: white;
+}
+.verticalRedLine {
+  position: absolute;
+  top: 0;
+  left: 33%;
+  display: block;
+  height: 100%;
+  width: 30px;
+
+  background-color: red;
+}
+
+.czech {
+  position: relative;
+  overflow: hidden;
+}
+.czech .topPart {
+  display: block;
+  height: 50%;
+  width: 100%;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  background-color: white;
+}
+
+.czech .bottomPart {
+  display: block;
+  height: 50%;
+  width: 100%;
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: red;
+}
+
+.czech .leftPart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 75px solid transparent;
+  border-left: 150px solid rgb(8, 8, 80);
+  border-bottom: 75px solid transparent;
+}
